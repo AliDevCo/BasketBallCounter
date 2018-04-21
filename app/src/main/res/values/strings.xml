@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Basket Ball Counter</string>
+    <string name="team1_name">Team 1</string>
+    <string name="team2_name">Team 2</string>
+    <string name="team_score">0</string>
+    <string name="team_fouls">Fouls</string>
+    <string name="team_fouls_number">0</string>
+    <string name="three_points">3 Points</string>
+    <string name="two_points">2 Points</string>
+    <string name="one_point">Free Throw</string>
+    <string name="Foul">Foul</string>
+    <string name="reset">Reset</string>
+</resources>

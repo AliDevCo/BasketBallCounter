@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="true"
+    android:scrollbars="vertical"
+    tools:context="com.example.android.basketballcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team1_name"
+                android:textColor="#fc6e51"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/team_1_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team_score"
+                android:textColor="#FF665353"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/threePointsTeam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#fc6e51"
+                android:onClick="addThreePointsForTeam1"
+                android:text="@string/three_points"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/twoPointsTeam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#fc6e51"
+                android:onClick="addTwoPointsForTeam1"
+                android:text="@string/two_points"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/onePointTeam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#fc6e51"
+                android:onClick="addOnePointForTeam1"
+                android:text="@string/one_point"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team_fouls"
+                android:textColor="#fc6e51"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/team_1_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team_fouls_number"
+                android:textColor="#665353"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/bonus_team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:textColor="#FFFC6E51"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/FoulTeam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#fc6e51"
+                android:onClick="increaseFoulForTeam1"
+                android:text="@string/Foul"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team2_name"
+                android:textColor="#fc6e51"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/team_2_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team_score"
+                android:textColor="#665353"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/threePointsTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#fc6e51"
+                android:onClick="addThreePointsForTeam2"
+                android:text="@string/three_points"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/twoPointsTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#fc6e51"
+                android:onClick="addTwoPointsForTeam2"
+                android:text="@string/two_points"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/onePointTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#fc6e51"
+                android:onClick="addOnePointForTeam2"
+                android:text="@string/one_point"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team_fouls"
+                android:textColor="#fc6e51"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/team_2_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_horizontal"
+                android:text="@string/team_fouls_number"
+                android:textColor="#665353"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/bonus_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:textColor="#FFFC6E51"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/FoulTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#fc6e51"
+                android:onClick="increaseFoulForTeam2"
+                android:text="@string/Foul"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:background="#fc6e51"
+        android:onClick="reset"
+        android:text="@string/reset"
+        android:textColor="#ffffff" />
+</RelativeLayout>
